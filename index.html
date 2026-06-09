@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctoral Student Seminar Series</title>
+    <style>
+        :root {
+            --primary-color: #0366d6; /* GitHub Blue */
+            --text-color: #24292e;
+            --bg-color: #f6f8fa;
+            --card-bg: #ffffff;
+            --border-color: #e1e4e8;
+            --placeholder-color: #6a737d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #24292e;
+            color: #ffffff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            color: #959da5;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro-text {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            color: #586069;
+            text-align: center;
+        }
+
+        /* Talk Cards */
+        .talk-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .talk-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .presenter-name {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin: 0 0 0.25rem 0;
+        }
+
+        .presenter-dept {
+            font-size: 0.85rem;
+            color: #586069;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .talk-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 0 0 1rem 0;
+            color: var(--text-color);
+        }
+
+        .talk-abstract {
+            font-size: 0.95rem;
+            color: #24292e;
+            margin: 0;
+            text-align: justify;
+        }
+
+        /* Placeholder Specific Styling */
+        .placeholder-card {
+            border-style: dashed;
+            background-color: rgba(246, 248, 250, 0.5);
+        }
+
+        .placeholder-text {
+            font-style: italic;
+            color: var(--placeholder-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #6a737d;
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.6rem; }
+            .talk-card { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Doctoral Student Seminar Series</h1>
+        <p>Upcoming Research Presentations & Abstracts</p>
+    </header>
+
+    <div class="container">
+        <p class="intro-text">
+            Welcome to our doctoral seminar hub. Below you will find the schedule, speaker details, and abstracts for our upcoming student presentations.
+        </p>
+
+        <div class="talk-card">
+            <h2 class="presenter-name">Muskan Walia</h2>
+            <span class="presenter-dept">SCSS</span>
+            <h3 class="talk-title">Stress-testing Generative AI in High-Stakes Policy Settings: Evidence from Race-Blind Charging in California</h3>
+            <p class="talk-abstract">
+                Generative AI systems are rapidly moving from prototypes to embedded components of government decision-making infrastructure. For instance, California mandates all prosecutors implement a new review procedure called “race-blind charging”, where prosecutors review case documents with race-related information redacted. To make this feasible, the state encouraged prosecutors to use AI-based redaction. We designed and tested one such system that uses generative AI to automatically redact race-related information from police reports. We present these validation results, demonstrating that our algorithm reliably removes all race-related indicators required by law, reduces the ability to predict an arrestee’s race from redacted narratives, and performs at the top of its class relative to existing alternatives.
+            </p>
+        </div>
+
+        <div class="talk-card">
+            <h2 class="presenter-name">Kaushik Mohan</h2>
+            <span class="presenter-dept">SCSS</span>
+            <h3 class="talk-title">The Language of Sequence Analysis</h3>
+            <p class="talk-abstract">
+                State Sequence Analysis (SSA), used in the social sciences for longitudinal and life-course research, is limited by simpler probabilistic models and non-generative non-parametric models. Our broader research explores the use of generative Transformer architectures, the structural foundation of Large Language Models (LLMs), to address the unique constraints of categorical sequence analysis. Current work evaluates the efficacy of training small Transformer models for sequence imputation and representation learning.
+            </p>
+        </div>
+
+        <div class="talk-card placeholder-card">
+            <h2 class="presenter-name">Christopher Buglino</h2>
+            <span class="presenter-dept">Data Science/Poly</span>
+            <h3 class="talk-title placeholder-text">Talk Title: TBA</h3>
+            <p class="talk-abstract placeholder-text">
+                Abstract pending. Check back soon for details regarding this presentation's focus and research findings.
+            </p>
+        </div>
+
+        <div class="talk-card placeholder-card">
+            <h2 class="presenter-name">Abdul Hamid Hatsaandh</h2>
+            <span class="presenter-dept">Intl Ed</span>
+            <h3 class="talk-title placeholder-text">Talk Title: TBA</h3>
+            <p class="talk-abstract placeholder-text">
+                Abstract pending. Check back soon for details regarding this presentation's focus and research findings.
+            </p>
+        </div>
+
+        <div class="talk-card placeholder-card">
+            <h2 class="presenter-name">Jawed Nazari</h2>
+            <span class="presenter-dept">Int Ed</span>
+            <h3 class="talk-title placeholder-text">Talk Title: TBA</h3>
+            <p class="talk-abstract placeholder-text">
+                Abstract pending. Check back soon for details regarding this presentation's focus and research findings.
+            </p>
+        </div>
+
+        <div class="talk-card placeholder-card">
+            <h2 class="presenter-name">George Perrett</h2>
+            <span class="presenter-dept">SCSS</span>
+            <h3 class="talk-title placeholder-text">Talk Title: TBA</h3>
+            <p class="talk-abstract placeholder-text">
+                Abstract pending. Check back soon for details regarding this presentation's focus and research findings.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Department Doctoral Seminar Series. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
